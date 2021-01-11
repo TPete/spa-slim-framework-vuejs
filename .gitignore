@@ -1,0 +1,7 @@
+dist
+.docker/data
+node_modules
+public
+vendor
+.idea
+docs

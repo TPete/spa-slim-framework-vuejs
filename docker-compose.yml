@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+    apache:
+        container_name: spa_apache
+        build: .docker/apache
+        ports:
+            - 80:80
+        volumes:
+            - ./:/var/www/html
+            - .docker/config/vhosts:/etc/apache2/sites-enabled
+            - .docker/data/logs/apache:/var/log/apache2:delegated
+        depends_on:
+            - php-fpm
+        networks:
+            - internal
+
+    php-fpm:
+        container_name: spa_php
+        build:
+            context: .docker/php-fpm
+        volumes:
+            - ./:/var/www/html:delegated
+            - .docker/data/logs/php:/var/log/php:delegated
+        expose:
+            - 9000
+        networks:
+            - internal
+
+networks:
+    internal:
