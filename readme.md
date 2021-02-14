@@ -29,3 +29,14 @@ Build the frontend:
     yarn build
 
 Access the app at http://localhost.
+
+## Code style
+
+The project uses [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) to enforce code style 
+rules for the PHP code. We are following a slightly adapted 
+[Symfony code style](https://symfony.com/doc/current/contributing/code/standards.html).
+
+The JavaScript and Vue.js code follows Vue.js [recommend code style](https://v3.vuejs.org/style-guide/#priority-c-recommended)
+as well as [StandardJs](https://standardjs.com/).
+
+For details see: https://tpetersdorf.dev/tutorials/static-analysis-part-1-code-style-tools/

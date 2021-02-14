@@ -5,3 +5,4 @@ public
 vendor
 .idea
 docs
+.php_cs.cache
