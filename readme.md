@@ -40,3 +40,15 @@ The JavaScript and Vue.js code follows Vue.js [recommend code style](https://v3.
 as well as [StandardJs](https://standardjs.com/).
 
 For details see: https://tpetersdorf.dev/tutorials/static-analysis-part-1-code-style-tools/
+
+## Code quality
+
+The project uses
+
+* [PHPMD](https://phpmd.org/)
+* [PHPStan](https://phpstan.org/)
+* [PSALM](https://psalm.dev/)
+
+to improve the code quality
+
+For details see: https://tpetersdorf.dev/tutorials/static-analysis-part-2-code-quality-tools/
