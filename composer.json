@@ -23,6 +23,9 @@
         "php-di/slim-bridge": "^3.1",
         "slim/php-view": "^3.0"
     },
+    "require-dev": {
+        "povils/phpmnd": "^2.4"
+    },
     "autoload": {
         "psr-4": {
             "SPA\\": "src"
@@ -33,6 +36,8 @@
         "fix": "php php-cs-fixer.phar fix -v --config=./.php_cs.dist",
         "phpmd": "php phpmd.phar src/ ansi cleancode,codesize,controversial,design,naming,unusedcode",
         "phpstan": "php phpstan.phar analyze src/ --level=8",
-        "psalm": "php psalm.phar"
+        "psalm": "php psalm.phar",
+        "phpmnd": "vendor/bin/phpmnd src/ --extensions=all",
+        "phpcpd": "php phpcpd.phar src/"
     }
 }

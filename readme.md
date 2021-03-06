@@ -52,3 +52,15 @@ The project uses
 to improve the code quality
 
 For details see: https://tpetersdorf.dev/tutorials/static-analysis-part-2-code-quality-tools/
+
+## Additional checks
+
+For additional checks
+
+* [PHPMND](https://github.com/povils/phpmnd)
+* [PHPCPD](https://github.com/sebastianbergmann/phpcpd)
+* [PHPUnit](https://github.com/sebastianbergmann/phpunit)
+
+are available.
+
+For details see: https://tpetersdorf.dev/tutorials/static-analysis-part-3-the-wrap-up/
