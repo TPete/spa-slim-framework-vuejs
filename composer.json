@@ -23,16 +23,13 @@
         "php-di/slim-bridge": "^3.1",
         "slim/php-view": "^3.0"
     },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.18"
-    },
     "autoload": {
         "psr-4": {
             "SPA\\": "src"
         }
     },
     "scripts": {
-        "lint": "php-cs-fixer fix --dry-run -v --config=./.php_cs.dist",
-        "fix": "php-cs-fixer fix -v --config=./.php_cs.dist"
+        "lint": "php php-cs-fixer.phar fix --dry-run -v --config=./.php_cs.dist",
+        "fix": "php php-cs-fixer.phar fix -v --config=./.php_cs.dist"
     }
 }
